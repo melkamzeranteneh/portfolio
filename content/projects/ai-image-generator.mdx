@@ -1,0 +1,20 @@
+---
+title: "AI Image Generator"
+date: "2023-12-10"
+summary: "A SaaS application allowing users to generate images from text prompts using OpenAI's DALL-E API."
+tags: ["Next.js", "OpenAI API", "Stripe", "Prisma"]
+---
+
+## Concept
+
+This project explores the integration of AI models into consumer-facing applications. Users can sign up, purchase credits via Stripe, and generate unique artwork.
+
+### Implementation
+
+- **Frontend**: Built with Next.js 14 and Tailwind CSS.
+- **Backend API**: Serverless functions handling OpenAI requests.
+- **Database**: PostgreSQL hosted on Neon, managed via Prisma.
+
+### Learnings
+
+Strict rate limiting and error handling were crucial when working with expensive third-party APIs.

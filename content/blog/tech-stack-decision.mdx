@@ -1,0 +1,31 @@
+---
+title: "Why I Built My Portfolio with Next.js and Shadcn"
+date: "2024-02-01"
+summary: "A deep dive into the technical decisions behind this website."
+tags: ["Next.js", "Engineering"]
+---
+
+## Introduction
+
+Building a personal site is always a balancing act between design, performance, and maintenance. For this iteration, I chose **Next.js App Router** for its robust architecture and **Shadcn UI** for its beautiful, accessible component primitives.
+
+### The Decision Process
+
+1. **Performance**: Static generation ensures the site is blazing fast.
+2. **Design**: Tailwind CSS allows for rapid styling without leaving the HTML.
+3. **Content**: MDX lets me write content in Markdown while embedding React components.
+
+## Code Snippet Example
+
+Here is how I fetch posts:
+
+```typescript
+export function getAllPosts(folder: string): Post[] {
+  const slugs = getPostSlugs(folder)
+  return slugs.map((slug) => getPostBySlug(folder, slug))
+}
+```
+
+## Conclusion
+
+This stack provides a solid foundation for documenting my learning journey.
